@@ -13,8 +13,8 @@ import java.util.ArrayList;
  */
 public class Panier {
     private java.util.ArrayList panier = new java.util.ArrayList<Orange>();
-    private int Max;
-    private int current;
+    private int Max=4;
+    private int current=0;
 
     public ArrayList getPanier() {
         return panier;
@@ -39,10 +39,14 @@ public void AjoutOrange(Orange a){
 }    
  
 public void remove(Orange a){
+    if (this.panier.size()!=0){
+        
+    
     for(int i=0;i<=this.panier.size();i++)
     {
        if( this.panier.get(i).equals(a))
            this.panier.remove(a);
+    }
     }
 }
 }
