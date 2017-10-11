@@ -1,3 +1,5 @@
+package ufrscientech.panier;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -47,7 +49,7 @@ public class OrangeTest extends TestCase {
         double Prix = 0.5;
         Orange instance = new Orange();
         instance.setPrix(Prix);
-        // TODO review the generated test code and remove the default call to fail.
+        assertEquals(instance.getPrix(),Prix);
         
     }
 
@@ -60,7 +62,7 @@ public class OrangeTest extends TestCase {
         String expResult = "France";
         String result = instance.getOrigine();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
+        
         
     }
 
@@ -72,7 +74,7 @@ public class OrangeTest extends TestCase {
         String Origine = "France";
         Orange instance = new Orange();
         instance.setOrigine(Origine);
-        // TODO review the generated test code and remove the default call to fail.
+        assertEquals(instance.getOrigine(),"France");
         
     }
     public void testNewOrange(){
